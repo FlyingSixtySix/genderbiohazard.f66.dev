@@ -1,0 +1,183 @@
+@font-face {
+	font-family: 'Power Red and Green';
+	src: url('pkmnfl.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #F5A9B8;
+	font-family: 'Power Red and Green', Arial, Helvetica, sans-serif;
+	font-size: 48px;
+	image-rendering: crisp-edges;
+}
+
+.normal-text { font-size: 26px; }
+
+span { line-height: 52px; }
+
+p { margin: 0 0 6px 0; }
+
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 0;
+	padding-bottom: 6px;
+}
+
+* {	box-sizing: border-box; }
+
+section {
+	position: relative;
+	padding: 50px 0 50px 0;
+}
+
+ul { margin: 12px; }
+
+li {
+	list-style-image: url('images/bullet.png');
+}
+
+.card {
+	width: 912px;
+	/* Center on page */
+	position: relative;
+	/* top: 50%; */
+	left: 50%;
+	transform: translateX(-50%);
+	/* margin: -298px 0 0 -456px; */
+	/* Card background */
+	/* background: url('images/card.png');
+	background-repeat: no-repeat; */
+	/* Inner card padding */
+	/* Shorthand: top right bottom left */
+	/* padding: 32px 36px 36px 36px; */
+}
+
+#home-button {
+	width: 417px;
+	height: 64px;
+	position: relative;
+	top: 40px;
+	left: 36px;
+	float: left;
+	z-index: 1;
+}
+
+/* Top strip */
+#top {
+	background: url('images/cardtop.png');
+	background-repeat: no-repeat;
+	height: 112px;
+	padding-right: 60px;
+	text-align: right;
+	line-height: 144px;
+	font-size: 40px;
+}
+
+/* Center strip */
+#center {
+	background: white;
+	border-left: 12px solid black;
+	border-right: 12px solid black;
+	min-height: 344px;
+	padding: 12px 24px 12px 24px;
+}
+
+/* Header for the section */
+.separator {
+	background: white;
+	border-left: 12px solid black;
+	border-right: 12px solid black;
+	height: 12px;
+}
+
+/* Header stripe */
+#header {
+	background: #5BCEFA;
+	border-left: 12px solid black;
+	border-right: 12px solid black;
+	text-align: center;
+}
+
+#home-section #center {
+	padding: 0 24px 0 24px;
+	display: flex;
+}
+
+/* Left (info) */
+#left {
+	flex: 3;
+	padding: 0 36px 0 4px;
+}
+
+/* Circle */
+.circle::before {
+	content: url('images/circle.png');
+	margin-right: 16px;
+	position: relative;
+}
+
+.circle:not(.card-header)::before {
+	top: 4px;
+}
+
+/* Right-align secend cell of every row */
+#center td:nth-child(2) {
+	text-align: right;
+}
+
+/* Name on home section */
+.card-header {
+	display: block;
+	width: 100%;
+	margin: 15px 0 53px 0;
+	box-shadow:
+		0 1px 0 0 #FFF,
+		0 9px 0 0 #000;
+}
+
+#discord {
+	font-size: 26px;
+}
+
+/* Right (hilda) */
+#right {
+	flex: 1;
+}
+
+#right img {
+	margin: -4px -32px 0 0;
+}
+
+/* Bottom strip */
+#bottom {
+	background: url('images/cardbottom.png');
+	background-repeat: no-repeat;
+	height: 140px;
+	display: flex;
+	justify-content: center;
+	padding-top: 12px;
+}
+
+#bottom a {
+	flex: 1;
+	flex-grow: 0;
+	margin-right: 40px;
+}
+
+#bottom a:last-child {
+	margin-right: 0;
+}
+
+section, section:target ~ #home-section {
+	display: none;
+}
+
+#home-section, section:target {
+	display: block;
+}
