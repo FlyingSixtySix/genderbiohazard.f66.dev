@@ -154,6 +154,22 @@ li {
 	margin: -4px -32px 0 0;
 }
 
+/* Image grid (Favorite Characters section) */
+.image-grid {
+	margin-top: 12px;
+	display: grid;
+	grid-gap: 24px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.image-grid div {
+	text-align: center;
+}
+
+.image-grid div img {
+	max-width: 100%;
+}
+
 /* Bottom strip */
 #bottom {
 	background: url('images/cardbottom.png');
