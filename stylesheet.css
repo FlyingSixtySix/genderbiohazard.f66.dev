@@ -171,6 +171,25 @@ li {
 	max-width: 100%;
 }
 
+.image-grid div #character {
+	margin-bottom: 0;
+}
+
+.image-grid div #franchise {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.image-grid div #artist {
+	font-size: 22px;
+}
+
+.image-grid div a {
+	text-decoration: none;
+	color: rgb(150, 150, 200);
+	font-size: 24px;
+}
+
 /* Bottom strip */
 #bottom {
 	background: url('images/cardbottom.png');
