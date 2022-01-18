@@ -223,6 +223,7 @@ section, section:target ~ #home-section {
 @media only screen and (max-width: 912px) {
 	body {
 		font-size: 5.3vw;
+		line-height: 1.2;
 	}
 
 	* {
@@ -281,6 +282,10 @@ section, section:target ~ #home-section {
 		padding: 0 !important;
 	}
 
+	#right {
+		float: right;
+	}
+
 	#right img {
 		width: 30vw !important;
 		height: auto !important;
@@ -294,11 +299,5 @@ section, section:target ~ #home-section {
 		height: 10vw !important;
 		position: relative;
 		top: -1vw;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	tr td {
-		display: block !important;
 	}
 }
