@@ -217,3 +217,88 @@ section, section:target ~ #home-section {
 #home-section, section:target {
 	display: block;
 }
+
+/* Mobile */
+
+@media only screen and (max-width: 912px) {
+	body {
+		font-size: 5.3vw;
+	}
+
+	* {
+		background-size: contain !important;
+	}
+
+	.card {
+		width: 100vw !important;
+		left: 0 !important;
+		transform: none !important;
+	}
+
+	.card-header {
+		box-shadow:
+			0 1px 0 0 #FFF,
+			0 1vw 0 0 #000 !important;
+	}
+
+	#home-button {
+		left: 4vw !important;
+		top: 4.5vw !important;
+		width: 45.5vw !important;
+		height: 7.2vw !important;
+	}
+
+	#top {
+		height: 12.4vw !important;
+		position: relative;
+		top: 1px !important;
+	}
+
+	#top span {
+		margin-top: 0vw;
+		line-height: 4.5vw;
+		font-size: 4.5vw !important;
+		position: relative;
+		top: 6vw;
+		left: 13vw;
+		float: left;
+	}
+
+	#center {
+		border-width: 1.5vw !important;
+	}
+
+	.separator {
+		border-width: 1.5vw !important;
+		height: 1.2vw !important;
+	}
+
+	#header {
+		border-width: 1.5vw !important;
+	}
+
+	#left {
+		padding: 0 !important;
+	}
+
+	#right img {
+		width: 30vw !important;
+		height: auto !important;
+	}
+
+	.circle::before {
+		content: none !important;
+	}
+
+	#bottom a img {
+		height: 10vw !important;
+		position: relative;
+		top: -1vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	tr td {
+		display: block !important;
+	}
+}
